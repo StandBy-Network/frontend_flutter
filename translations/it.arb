@@ -1,0 +1,14 @@
+{
+  "@@last_modified": "2020-04-01",
+  "title": "App Ciao Mondo",
+  "@title":{
+    "description": "Il tuo titolo",
+    "type": "text",
+    "placeholders": {}
+  },
+  "hello": "Ciao",
+  "@hello": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
