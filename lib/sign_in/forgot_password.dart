@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/sign_in/password_sent.dart';
 
 
 class ForgotPassword extends StatefulWidget {
@@ -98,7 +99,7 @@ class ForgotPasswordState extends State<ForgotPassword> {
                     child: RaisedButton(
                         padding: EdgeInsets.all(20.0),
                         onPressed: () {
-                          /*...*/
+                          Navigator.push(context, new MaterialPageRoute(builder: (context) => PasswordSent()));
                         },
                         color: Color(0xffD50000),
                         child:

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/home.dart';
 
 
 class SignUpSuccess extends StatefulWidget {
@@ -20,7 +21,7 @@ class SignUpSuccessState extends State<SignUpSuccess> {
             color: Colors.grey,
           ),
           onPressed: () {
-            /*...*/
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
           },
         ),
         title: Text('SEGÍTSNEKEM - ASSIST'),

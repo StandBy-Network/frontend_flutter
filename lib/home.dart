@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frontend_flutter/contacts/my_contacts.dart';
+import 'package:frontend_flutter/ui/screens/my_profile.dart';
+import 'package:frontend_flutter/sign_in/sign_in.dart';
 
 import 'my_requests/my_requests.dart';
 
@@ -32,6 +34,7 @@ class HomeState extends State<Home> {
         margin: EdgeInsets.fromLTRB(20, 8, 20, 8),
         child: ListView(
             children: [
+              Text('Segítségkérés és -nyújtás a közelben'),
               Card( child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                 child: ListTile(
@@ -74,6 +77,60 @@ class HomeState extends State<Home> {
                   onTap: () => true,
                 ),),
               ),
+              Text('Egészségügyi státuszkövetés'),
+              Card( child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: ListTile(
+                  leading: Icon(Icons.person),
+                  title: Text('Egészségügyi státuszom',
+                    style: TextStyle(
+                        color: Color(0xffEB6E61)
+                    ),),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyProfile())),
+                ),
+              ),
+              ),
+              Card( child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: ListTile(
+                  leading: Icon(Icons.people),
+                  title: Text('Barátaim egészségügyi státusza',
+                    style: TextStyle(
+                        color: Color(0xffEB6E61)
+                    ),),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
+                ),
+              ),
+              ),
+              Card( child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: ListTile(
+                  leading: Icon(Icons.people_outline),
+                  title: Text('Kapcsolataim',
+                    style: TextStyle(
+                        color: Color(0xffEB6E61)
+                    ),),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
+                ),
+              ),
+              ),
+              Card( child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: ListTile(
+                  leading: Icon(Icons.location_on),
+                  title: Text('Kikkel találkoztam',
+                    style: TextStyle(
+                        color: Color(0xffEB6E61)
+                    ),),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
+                ),
+              ),
+              ),
+              Text('Események, profil'),
               Card( child:
               Padding(
                 padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
@@ -99,39 +156,13 @@ class HomeState extends State<Home> {
               Card( child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                 child: ListTile(
-                  leading: Icon(Icons.people),
-                  title: Text('Kapcsolataim',
-                    style: TextStyle(
-                        color: Color(0xffEB6E61)
-                    ),),
-                  trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
-                ),
-              ),
-              ),
-              Card( child: Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                child: ListTile(
                   leading: Icon(Icons.person),
                   title: Text('Profilom',
                     style: TextStyle(
                         color: Color(0xffEB6E61)
                     ),),
                   trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () => true,
-                ),
-              ),
-              ),
-              Card( child: Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                child: ListTile(
-                  leading: Icon(Icons.power_settings_new),
-                  title: Text('Kijelentkezés',
-                    style: TextStyle(
-                        color: Color(0xffEB6E61)
-                    ),),
-                  trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () => true,
+                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyProfile())),
                 ),
               ),
               ),

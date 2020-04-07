@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/sign_in/forgot_password.dart';
+
+import '../home.dart';
 
 
 class SignIn extends StatefulWidget {
@@ -92,14 +95,14 @@ class SignInState extends State<SignIn> {
             child: RaisedButton(
                 padding: EdgeInsets.all(10.0),
                 onPressed: () {
-                  /*...*/
-                  Navigator.pushNamed(context, '/sign_in_success');
+                  Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
                 },
                 color: Color(0xffD50000),
                 child:
                 Text(
                   "Bejelentkezés",
-                  style: TextStyle(fontSize:16.0,
+                  style: TextStyle(
+                      fontSize:16.0,
                       color: Color(0xFFeceff1),
                       fontWeight: FontWeight.w600,
                       fontFamily: "Roboto"),
@@ -108,8 +111,7 @@ class SignInState extends State<SignIn> {
           ),
           FlatButton(
             onPressed: () {
-              /*...*/
-
+              Navigator.push(context, new MaterialPageRoute(builder: (context) => ForgotPassword()));
             },
             child: Text(
               "Elfelejtett jelszó",

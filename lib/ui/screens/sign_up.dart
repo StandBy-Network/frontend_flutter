@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/sign_up/sign_up_success.dart';
 
 
 class SignUp extends StatefulWidget {
@@ -23,7 +24,8 @@ class SignUpState extends State<SignUp> {
             /*...*/
           },
         ),
-        title: Text('SEGÍTSNEKEM - ASSIST'),
+        title: Text('SEGÍTSNEKEM - ASSIST',
+        style:  Theme.of(context).textTheme.headline),
       ),
       body: Container(
         margin: EdgeInsets.all(20),
@@ -39,10 +41,7 @@ class SignUpState extends State<SignUp> {
           Padding(
             padding: EdgeInsets.fromLTRB(10, 40, 10, 40),
             child: Text('Regisztráció, feliratkozás'.toUpperCase(),
-              style: TextStyle(
-                fontSize: 22,
-                color:  Color(0xFF000000),
-              ),
+              style: Theme.of(context).textTheme.headline
             ),
           ),
           Padding(
@@ -50,16 +49,9 @@ class SignUpState extends State<SignUp> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Név - vezetéknév, keresztnév',
-                hintStyle: ( TextStyle(
-                    fontSize: 14.0,
-                    fontWeight: FontWeight.w300
-                )
-                ),
+                hintStyle: Theme.of(context).textTheme.title,
               ),
-              style: TextStyle(fontSize:12.0,
-                  color: Color(0xFF000000),
-                  fontWeight: FontWeight.w200,
-                  fontFamily: "Roboto"),
+              style: Theme.of(context).textTheme.display1,
             ),
           ),
           Padding(
@@ -67,16 +59,9 @@ class SignUpState extends State<SignUp> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'E-mailcím',
-                hintStyle: ( TextStyle(
-                    fontSize: 14.0,
-                    fontWeight: FontWeight.w300
-                )
-                ),
+                hintStyle:  Theme.of(context).textTheme.title,
               ),
-              style: TextStyle(fontSize:12.0,
-                  color: Color(0xFF000000),
-                  fontWeight: FontWeight.w200,
-                  fontFamily: "Roboto"),
+              style: Theme.of(context).textTheme.display1,
             ),
           ),
           Padding(
@@ -84,20 +69,12 @@ class SignUpState extends State<SignUp> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Telefonszám',
-                hintStyle: ( TextStyle(
-                    fontSize: 14.0,
-                    fontWeight: FontWeight.w300
-                )
-                ),
-                errorText: "Telefonszám megadása kötelező!",
-                errorStyle: TextStyle(
-                  color: Color(0xffD50000),
-                ),
+                hintStyle:  Theme.of(context).textTheme.title,
+                errorText: ("Telefonszám megadása kötelező!"),
+                errorStyle: Theme.of(context).textTheme.display2,
+                suffixIcon: Icon(Icons.warning, color: Theme.of(context).accentColor),
               ),
-              style: TextStyle(fontSize:12.0,
-                  color: Color(0xFF000000),
-                  fontWeight: FontWeight.w200,
-                  fontFamily: "Roboto"),
+              style: Theme.of(context).textTheme.display1,
             ),
           ),
           Padding(
@@ -105,16 +82,9 @@ class SignUpState extends State<SignUp> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Irányítószám',
-                hintStyle: ( TextStyle(
-                    fontSize: 14.0,
-                    fontWeight: FontWeight.w300
-                )
-                ),
+                hintStyle: Theme.of(context).textTheme.title
               ),
-              style: TextStyle(fontSize:12.0,
-                  color: Color(0xFF000000),
-                  fontWeight: FontWeight.w200,
-                  fontFamily: "Roboto"),
+              style: Theme.of(context).textTheme.display1,
             ),
           ),
           Padding(
@@ -125,16 +95,13 @@ class SignUpState extends State<SignUp> {
               child: RaisedButton(
                   padding: EdgeInsets.all(20.0),
                   onPressed: () {
-                    /*...*/
+                 //   Navigator.push(context, new MaterialPageRoute(builder: (context) => SignUpSuccess()));
                   },
-                  color: Color(0xffD50000),
+                  color: Theme.of(context).accentColor,
                   child:
                   Text(
                     "Mehet!",
-                    style: TextStyle(
-                      fontSize:16.0,
-                      color: Color(0xFFeceff1),
-                    ),
+                    style: Theme.of(context).textTheme.caption,
                   )
               ),
             ),
@@ -143,5 +110,4 @@ class SignUpState extends State<SignUp> {
       ),
     );
   }
-  void buttonPressed(){}
 }

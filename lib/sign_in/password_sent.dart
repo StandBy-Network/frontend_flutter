@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/sign_in/sign_in.dart';
 
 
 class PasswordSent extends StatefulWidget {
@@ -51,7 +52,7 @@ class PasswordSentState extends State<PasswordSent> {
               child: RaisedButton(
                   padding: EdgeInsets.all(20.0),
                   onPressed: () {
-                    /*...*/
+                    Navigator.push(context, new MaterialPageRoute(builder: (context) => SignIn()));
                   },
                   color: Color(0xffD50000),
                   child:
