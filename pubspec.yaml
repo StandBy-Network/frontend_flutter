@@ -40,6 +40,7 @@ dependencies:
   date_format: ^1.0.8
   flutter_calendar_carousel: ^1.4.11
   custom_radio: ^0.1.2
+  flutter_lua: ^0.3.1
 
 
 
