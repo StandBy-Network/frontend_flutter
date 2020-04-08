@@ -1,0 +1,14 @@
+{
+  "@@last_modified": "2020-04-01",
+  "title": "Hello World App",
+  "@title":{
+    "description": "Your title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "hello": "Hello",
+  "@hello": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
