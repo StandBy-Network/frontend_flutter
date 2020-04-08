@@ -54,8 +54,8 @@ class AssistsState extends State<Assists> {
     for (int i=0; i < 3; i++) {
       requests.addAll(buildRequests());
     }
-    Comparator<Request> dateComparator = (a, b) => a.date.compareTo(b.date);
-    requests.sort(dateComparator);
+  //  Comparator<Request> dateComparator = (a, b) => a.date.compareTo(b.date);
+ //   requests.sort(dateComparator);
     List<ListTile> list = List<ListTile>();
     requests.forEach((request) {
       list.add(ListTile(
