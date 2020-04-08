@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../sign_up/sign_up_success.dart';
+import '../../home.dart';
 
 
 class SignUp extends StatefulWidget {
@@ -25,7 +25,7 @@ class SignUpState extends State<SignUp> {
           },
         ),
         title: Text('SEGÍTSNEKEM - ASSIST',
-        style:  Theme.of(context).textTheme.headline),
+            style:  Theme.of(context).textTheme.headline),
       ),
       body: Container(
         margin: EdgeInsets.all(20),
@@ -41,7 +41,7 @@ class SignUpState extends State<SignUp> {
           Padding(
             padding: EdgeInsets.fromLTRB(10, 40, 10, 40),
             child: Text('Regisztráció, feliratkozás'.toUpperCase(),
-              style: Theme.of(context).textTheme.headline
+                style: Theme.of(context).textTheme.headline
             ),
           ),
           Padding(
@@ -81,8 +81,8 @@ class SignUpState extends State<SignUp> {
             padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
             child: TextField(
               decoration: InputDecoration(
-                hintText: 'Irányítószám',
-                hintStyle: Theme.of(context).textTheme.title
+                  hintText: 'Irányítószám',
+                  hintStyle: Theme.of(context).textTheme.title
               ),
               style: Theme.of(context).textTheme.display1,
             ),
@@ -95,7 +95,7 @@ class SignUpState extends State<SignUp> {
               child: RaisedButton(
                   padding: EdgeInsets.all(20.0),
                   onPressed: () {
-                 //   Navigator.push(context, new MaterialPageRoute(builder: (context) => SignUpSuccess()));
+                    Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
                   },
                   color: Theme.of(context).accentColor,
                   child:

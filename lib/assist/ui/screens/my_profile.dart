@@ -70,48 +70,6 @@ class MyProfileState extends State<MyProfile> {
             ),
             style:  Theme.of(context).textTheme.display1,
           ),
-
-          Padding(
-            padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-            child: Text('Figyelmeztetések',
-              style: TextStyle(
-                fontSize: 16,
-                color:  Color(0xff63E300),
-              ),
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-                    child: CircleAvatar(
-                      backgroundColor: Theme.of(context).indicatorColor,
-                    ),
-                  ),
-                  Padding(
-                      padding: EdgeInsets.fromLTRB(20, 28, 10, 20),
-                      child: Text('Üzenetek',
-                        style: Theme.of(context).textTheme.headline,
-                      )
-                  ),
-                ],
-              ),
-              Checkbox(
-                value: isChecked,
-                activeColor:  Theme.of(context).accentColor,
-                onChanged: (value) {
-                  setState(() {
-                    isChecked = value;
-                  });
-                },
-              ),
-            ],
-          ),
           Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

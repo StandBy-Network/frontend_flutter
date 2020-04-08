@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/assist/ui/screens/sign_up.dart';
 import '../../imetyou/imetyou.dart';
 import '../../assist/ui/screens/my_profile.dart';
 
@@ -25,7 +26,7 @@ class ApplicationSwitcherState extends State<ApplicationSwitcher> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => MyProfile()));
+                            MaterialPageRoute(builder: (context) => SignUp()));
 
                       },
                       color: Colors.blue,

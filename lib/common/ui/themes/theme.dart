@@ -6,6 +6,7 @@ ThemeData basicTheme() {
       //appbar and header
       headline: base.headline.copyWith(
         color: Colors.black,
+        fontSize: 22,
       ),
       // placeholder, hint text
       title: base.title.copyWith(
@@ -32,7 +33,7 @@ ThemeData basicTheme() {
       // main page text
       body1: base.body1.copyWith(
         color: Color(0xffEB6E61),
-        fontSize: 14,
+        fontSize: 16,
       ),
     );
   }
@@ -45,7 +46,7 @@ ThemeData basicTheme() {
     indicatorColor:  Color(0xff979797),
     iconTheme: IconThemeData(
       color: Color(0xff979797),
-      size: 20.0,
+      size: 24.0,
     ),
   );
 }
