@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_flutter/sign_in/forgot_password.dart';
+import './forgot_password.dart';
 
 import '../home.dart';
 

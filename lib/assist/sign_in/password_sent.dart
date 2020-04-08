@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_flutter/sign_in/sign_in.dart';
+import './sign_in.dart';
 
 
 class PasswordSent extends StatefulWidget {

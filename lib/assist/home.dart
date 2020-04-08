@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import './assist/contacts/my_contacts.dart';
-import './assist/ui/screens/my_profile.dart';
-import './assist/sign_in/sign_in.dart';
+import './contacts/my_contacts.dart';
+import './ui/screens/my_profile.dart';
+import './sign_in/sign_in.dart';
 
-import './assist/my_requests/my_requests.dart';
+import 'my_requests/my_requests.dart';
 
 
 class Home extends StatefulWidget {

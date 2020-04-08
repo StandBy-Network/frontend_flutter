@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_flutter/profile/profile_saved.dart';
+import '../../profile/profile_saved.dart';
 
 import '../../home.dart';
 

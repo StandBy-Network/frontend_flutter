@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import './assist/contacts/my_contacts.dart';
-import './assist/ui/screens/my_profile.dart';
-import './assist/ui/screens/sign_up.dart';
-import './assist/utils/theme.dart';
+import 'package:frontend_flutter/contacts/my_contacts.dart';
+import 'package:frontend_flutter/ui/screens/my_profile.dart';
+import 'package:frontend_flutter/ui/screens/sign_up.dart';
+import 'package:frontend_flutter/utils/theme.dart';
 
-import './assist/utils/app_localizations.dart';
+import 'utils/app_localizations.dart';
 import 'home.dart';
 
 void main() => runApp(MyApp());
