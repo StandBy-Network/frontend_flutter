@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>NSContactsUsageDescription</key>
+    <string>This app requires contacts access to function properly.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Need BLE permission</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Need BLE permission</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Need Location permission</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Need Location permission</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Need Location permission</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -41,5 +53,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIStatusBarHidden</key>
+	<true/>
+
 </dict>
 </plist>

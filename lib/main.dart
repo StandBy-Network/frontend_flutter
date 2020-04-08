@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:contacts_service/contacts_service.dart';
+import 'package:intl/intl.dart';
+import 'package:permission_handler/permission_handler.dart';
+
+import './util/blue_handler.dart';
+import './util/contact_handler.dart';
+import './util/i18n.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print(I18n.getMessage("mm"));
     return MaterialApp(
       title: 'Standby Assist',
       theme: ThemeData(
