@@ -188,7 +188,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
   flutter_blue:
     dependency: "direct main"
     description:
@@ -196,6 +195,11 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.3+1"
+  flutter_localizations:
+    dependency: "direct main"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   flutter_native_splash:
     dependency: "direct main"
     description:
@@ -203,12 +207,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.9"
-=======
-  flutter_localizations:
-    dependency: "direct main"
-    description: flutter
-    source: sdk
-    version: "0.0.0"
   flutter_responsive:
     dependency: "direct main"
     description:
@@ -216,7 +214,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.6"
->>>>>>> d0c5a8923102dbcf751511e5a1ccad9d89c70d38
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -277,7 +274,6 @@ packages:
       name: intl
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.16.1"
   io:
     dependency: transitive
@@ -314,9 +310,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.11.4"
-=======
-    version: "0.16.0"
->>>>>>> d0c5a8923102dbcf751511e5a1ccad9d89c70d38
   matcher:
     dependency: transitive
     description:

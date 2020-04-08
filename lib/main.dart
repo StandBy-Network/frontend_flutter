@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:contacts_service/contacts_service.dart';
-import 'package:intl/intl.dart';
-import 'package:permission_handler/permission_handler.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:frontend_flutter/contacts/my_contacts.dart';
+import 'package:frontend_flutter/ui/screens/my_profile.dart';
+import 'package:frontend_flutter/ui/screens/sign_up.dart';
+import 'package:frontend_flutter/utils/theme.dart';
 
-import './util/blue_handler.dart';
-import './util/contact_handler.dart';
-import './util/i18n.dart';
+import 'utils/app_localizations.dart';
+import 'home.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    print(I18n.getMessage("mm"));
     return MaterialApp(
       home:  MyProfile(),
       theme: basicTheme(),
