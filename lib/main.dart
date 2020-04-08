@@ -3,7 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import './assist/contacts/my_contacts.dart';
 import './assist/ui/screens/my_profile.dart';
 import './assist/ui/screens/sign_up.dart';
-import './assist/utils/theme.dart';
+import './common/ui/themes/theme.dart';
 
 import './assist/utils/app_localizations.dart';
 import 'home.dart';
