@@ -1,7 +1,7 @@
-import './db_handler.dart';
-import './file_util.dart';
+import '../../common/utils/db_handler.dart';
+import '../../common/utils/file_util.dart';
 import '../bean/state.dart';
-import '../bean/application_settings.dart';
+import '../model/application_settings.dart';
 
 class SettingsHandler{
 
