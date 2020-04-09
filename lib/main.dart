@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import './assist/ui/screens/my_profile.dart';
-import './common/ui/themes/theme.dart';
-import './assist/utils/app_localizations.dart';
-import 'common/ui/application_switcher.dart';
+import 'package:frontend_flutter/screens/sign_up.dart';
+
+import 'utils/app_localizations.dart';
+import 'theme/theme.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,8 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     // home:  MyProfile(),
-      home:  ApplicationSwitcher(),
+      home:  SignUp(),
       theme: basicTheme(),
       supportedLocales: [
         Locale('en', 'US'),

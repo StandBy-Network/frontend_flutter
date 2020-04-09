@@ -1,5 +1,5 @@
-import '../../common/utils/db_handler.dart';
-import '../../common/utils/file_util.dart';
+import '../../utils/db_handler.dart';
+import '../../utils/file_util.dart';
 import '../bean/state.dart';
 import '../model/application_settings.dart';
 

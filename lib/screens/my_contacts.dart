@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../home.dart';
+import 'home.dart';
 
 
 class MyContacts extends StatefulWidget {

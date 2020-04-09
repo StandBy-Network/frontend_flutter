@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../profile/profile_saved.dart';
+import 'profile_saved.dart';
 
-import '../../home.dart';
+import 'home.dart';
 
 
 class MyProfile extends StatefulWidget {

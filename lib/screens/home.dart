@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_flutter/assist/ui/screens/assists.dart';
-import 'package:frontend_flutter/assist/ui/screens/offer_assist.dart';
-import 'package:frontend_flutter/assist/ui/screens/request_assist.dart';
-import 'ui/screens/my_contacts.dart';
-import './ui/screens/my_profile.dart';
+import 'package:frontend_flutter/screens/assists.dart';
+import 'package:frontend_flutter/screens/offer_assist.dart';
+import 'package:frontend_flutter/screens/request_assist.dart';
+import 'my_contacts.dart';
+import 'my_profile.dart';
 
-import 'my_requests/my_requests.dart';
+import 'my_requests.dart';
 
 
 class Home extends StatefulWidget {

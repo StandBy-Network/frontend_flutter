@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './password_sent.dart';
+import 'password_sent.dart';
 
 
 class ForgotPassword extends StatefulWidget {
