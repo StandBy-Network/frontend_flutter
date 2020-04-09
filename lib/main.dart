@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:frontend_flutter/screens/sign_up.dart';
+import 'package:frontend_flutter/screens/assist/sign_up.dart';
 
 import 'utils/app_localizations.dart';
 import 'theme/theme.dart';

@@ -1,7 +1,7 @@
-import '../../utils/db_handler.dart';
-import '../../utils/file_util.dart';
-import '../bean/state.dart';
-import '../model/application_settings.dart';
+
+import 'package:frontend_flutter/bean/state.dart';
+
+import '../models/application_settings.dart';
 
 class SettingsHandler{
 
@@ -17,8 +17,6 @@ class SettingsHandler{
     return returnValue;
 
   }
-
-
 
 
   static bool hasCurrentState(){

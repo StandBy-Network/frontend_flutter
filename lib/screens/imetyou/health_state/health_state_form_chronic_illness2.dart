@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import '../main_menu.dart';
-import 'state_button_next.dart';
-import 'state_form_health3.dart';
-import '../../bean/layout_bean.dart';
-import 'state_layout.dart';
+import 'package:frontend_flutter/bean/layout_bean.dart';
+import 'health_state_button_next.dart';
+import 'health_state_layout.dart';
 
 
 class StateFormChronicIllness2 extends StatefulWidget {

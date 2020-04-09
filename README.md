@@ -2,6 +2,8 @@ Coding guidelines
 
 Please, create a feature branch and run your tests before committing, pushing to the master branch.
 
+Please, write tests: https://flutter.dev/docs/cookbook/testing
+
 Please, use this dart style guide:
 https://dart.dev/guides/language/effective-dart/style
 https://dart.dev/guides/language/effective-dart/usage
@@ -13,6 +15,6 @@ https://medium.com/flutter-community/flutter-code-organization-de3a4c219149
 Styling:
 Please, use the global theme wherever possible. Check the themes.dart file.
 
-Please, organize your imports (CTRL+ALT+O) format your code(CTRL+A then CTRL+ALT+I) before pushing:
+Please, organize your imports (CTRL+ALT+O) format your code (CTRL+A then CTRL+ALT+I) before pushing:
 https://flutter.dev/docs/development/tools/formatting
 

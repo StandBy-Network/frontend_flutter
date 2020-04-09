@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import '../main_menu.dart';
-import '../calendar.dart';
-import 'state_button_next.dart';
-import 'state_form_chronic_illness2.dart';
-import '../../bean/layout_bean.dart';
-import 'state_layout.dart';
+import 'package:frontend_flutter/bean/layout_bean.dart';
+import 'package:frontend_flutter/screens/imetyou/calendar.dart';
+import 'health_state_button_next.dart';
+import 'health_state_form_chronic_illness2.dart';
+import 'health_state_layout.dart';
 
 class StateFormBorn1 extends StatefulWidget {
   @override

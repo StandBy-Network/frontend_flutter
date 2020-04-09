@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './main_menu.dart';
+import 'main_menu.dart';
 
 class MainScrean extends StatefulWidget {
   @override

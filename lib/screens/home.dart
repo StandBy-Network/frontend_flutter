@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:frontend_flutter/screens/assists.dart';
-import 'package:frontend_flutter/screens/offer_assist.dart';
-import 'package:frontend_flutter/screens/request_assist.dart';
-import 'my_contacts.dart';
-import 'my_profile.dart';
-
-import 'my_requests.dart';
+import 'package:frontend_flutter/screens/assist/assists.dart';
+import 'package:frontend_flutter/screens/assist/offer_assist.dart';
+import 'package:frontend_flutter/screens/assist/request_assist.dart';
+import 'imetyou/imetyou.dart';
+import 'assist/my_contacts.dart';
+import 'assist/my_profile.dart';
 
 
 class Home extends StatefulWidget {
@@ -135,7 +134,7 @@ class HomeState extends State<Home> {
                   leading: Icon(Icons.location_on),
                   title: Text('Kikkel találkoztam',
                     style: Theme.of(context).textTheme.body1,),
-                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
+                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => ImetYouApp())),
                 ),
               ),
               ),

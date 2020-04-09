@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import '../main_menu.dart';
-import 'state_button_next.dart';
-import '../../bean/layout_bean.dart';
+import 'package:frontend_flutter/bean/layout_bean.dart';
+import 'package:frontend_flutter/screens/imetyou/main_menu.dart';
 
 
 class StateLayout {

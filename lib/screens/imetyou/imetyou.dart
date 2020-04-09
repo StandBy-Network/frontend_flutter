@@ -10,7 +10,7 @@ import './util/contact_handler.dart';
 import './util/i18n.dart';
 import './util/constants.dart';
 */
-import './ui/main_screan.dart';
+import 'main_screan.dart';
 
 int a = 12;
 
