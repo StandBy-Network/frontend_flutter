@@ -16,7 +16,7 @@ ThemeData basicTheme() {
       ),
       // input text
       display1: base.headline.copyWith(
-        fontSize:16.0,
+        fontSize:18.0,
         color: Colors.black,
         fontWeight: FontWeight.w300,
       ),
@@ -33,7 +33,7 @@ ThemeData basicTheme() {
       // main page text
       body1: base.body1.copyWith(
         color: Color(0xffEB6E61),
-        fontSize: 16,
+        fontSize: 18,
       ),
     );
   }

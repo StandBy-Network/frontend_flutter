@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/components/listtile_long.dart';
+import 'package:frontend_flutter/components/listtile_short.dart';
 import 'package:frontend_flutter/screens/assist/assists.dart';
 import 'package:frontend_flutter/screens/assist/offer_assist.dart';
 import 'package:frontend_flutter/screens/assist/request_assist.dart';
@@ -17,7 +20,7 @@ class HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return new Scaffold(
       appBar: AppBar(
         leading:
         IconButton(
@@ -43,52 +46,26 @@ class HomeState extends State<Home> {
                 ),
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.all(10),
-                    child: Container(
-                      width: 160.0,
-                      height: 80.0,
-                      color: Colors.white,
-                      child: ListTile(
-                        leading: Icon(
-                          Icons.favorite,
-                          color:  Color(0xffD50000),
-                        ),
-                        title: Text('Segítséget kérek',
-                          style: Theme.of(context).textTheme.body1,),
-                        onTap:  () => Navigator.push(context, new MaterialPageRoute(builder: (context) => RequestAssist())),
-                      ),
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ListTileShort(
+                      tileTitle: "Segítséget kérek!",
+                      tileIconColor: Theme.of(context).accentColor,
+                      tileIcon: Icons.favorite,
+                      tileOnTap: () => true,// Navigator.push(context, new MaterialPageRoute(builder: (context) => RequestAssist())),
                     ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(10),
-                    child: Container(
-                      width: 160.0,
-                      height: 80.0,
-                      color: Colors.white,
-                      child:  ListTile(
-                        leading: Icon(
-                          Icons.favorite,
-                          color:  Color(0xff63E300),
-                        ),
-                        title: Text('Segíteni szeretnék',
-                          style: Theme.of(context).textTheme.body1,),
-                        onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => OfferAssist())),
-                      ),
+                    ListTileShort(
+                      tileTitle: "Segíteni szeretnék!",
+                      tileIconColor: Color(0xff63E300),
+                      tileIcon: Icons.favorite,
+                      tileOnTap: () => true,// Navigator.push(context, new MaterialPageRoute(builder: (context) => OfferAssist())),
                     ),
-                  ),
-                ],
-              ),
-              Card( child: Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                child: ListTile(
-                  leading: Icon(Icons.favorite, color: Color(0xffF7B82E)),
-                  title: Text('Segítségkérések és -nyújtások',
-                    style: Theme.of(context).textTheme.body1,),
-                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => Assists())),
-                ),),
+                  ]),
+              ListTileLong(
+                tileTitle: "Segítségkérések és -nyújtások!",
+                tileIconColor: Color(0xffF7B82E),
+                tileIcon: Icons.favorite,
+                tileOnTap: () => true,// Navigator.push(context, new MaterialPageRoute(builder: (context) => Assists())),
               ),
               Padding(
                 padding: EdgeInsets.all(10),
@@ -99,44 +76,21 @@ class HomeState extends State<Home> {
               Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                      padding: EdgeInsets.all(10),
-                      child: Container(
-                        width: 160.0,
-                        height: 80.0,
-                        color: Colors.white,
-                        child: ListTile(
-                          leading: Icon(Icons.person),
-                          title: Text('Egészségügyi státuszom',
-                            style: Theme.of(context).textTheme.body1,),
-                          onTap: () => true,
-                        ),
-                      ),
+                    ListTileShort(
+                      tileOnTap: () => true,
+                      tileTitle: 'Egészségügyi státuszom',
+                      tileIcon: Icons.person,
                     ),
-                    Padding(
-                      padding: EdgeInsets.all(10),
-                      child: Container(
-                        width: 160.0,
-                        height: 80.0,
-                        color: Colors.white,
-                        child: ListTile(
-                          leading: Icon(Icons.people),
-                          title: Text('Barátaim egészségügyi státusza',
-                            style: Theme.of(context).textTheme.body1,),
-                          onTap: () => true,
-                        ),
-                      ),
+                    ListTileShort(
+                      tileIcon: Icons.people,
+                      tileTitle: 'Barátaim egészségügyi státusza',
+                      tileOnTap: () => true,
                     ),
                   ]),
-              Card( child: Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                child: ListTile(
-                  leading: Icon(Icons.location_on),
-                  title: Text('Kikkel találkoztam',
-                    style: Theme.of(context).textTheme.body1,),
-                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => ImetYouApp())),
-                ),
-              ),
+              ListTileLong(
+                tileIcon: Icons.location_on,
+                tileTitle: "Kikkel találkoztam",
+                tileOnTap: () => true, //  () => Navigator.push(context, new MaterialPageRoute(builder: (context) => ImetYouApp())),
               ),
               Padding(
                 padding: EdgeInsets.all(10),
@@ -144,26 +98,16 @@ class HomeState extends State<Home> {
                 Text('Kapcsolataim, profilom',
                   style: Theme.of(context).textTheme.display1,),
               ),
-              Card( child: Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                child: ListTile(
-                  leading: Icon(Icons.people_outline),
-                  title: Text('Kapcsolataim',
-                    style: Theme.of(context).textTheme.body1,),
-                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
-                ),
+              ListTileLong(
+                tileOnTap: () => true, //  () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
+                tileTitle: 'Kapcsolataim',
+                tileIcon: Icons.people_outline,
               ),
-              ),
-              Card( child: Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                child: ListTile(
-                  leading: Icon(Icons.person),
-                  title: Text('Profilom',
-                    style: Theme.of(context).textTheme.body1,),
-                  onTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyProfile())),
-                ),
-              ),
-              ),
+              ListTileLong(
+                tileIcon: Icons.person,
+                tileTitle: 'Profilom',
+                tileOnTap: () => true, // () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyProfile())),
+              )
             ]),
       ),
     );
