@@ -52,20 +52,20 @@ class HomeState extends State<Home> {
                       tileTitle: "Segítséget kérek!",
                       tileIconColor: Theme.of(context).accentColor,
                       tileIcon: Icons.favorite,
-                      tileOnTap: () => true,// Navigator.push(context, new MaterialPageRoute(builder: (context) => RequestAssist())),
+                      tileOnTap: () =>  Navigator.push(context, new MaterialPageRoute(builder: (context) => RequestAssist())),
                     ),
                     ListTileShort(
                       tileTitle: "Segíteni szeretnék!",
                       tileIconColor: Color(0xff63E300),
                       tileIcon: Icons.favorite,
-                      tileOnTap: () => true,// Navigator.push(context, new MaterialPageRoute(builder: (context) => OfferAssist())),
+                      tileOnTap: () =>  Navigator.push(context, new MaterialPageRoute(builder: (context) => OfferAssist())),
                     ),
                   ]),
               ListTileLong(
                 tileTitle: "Segítségkérések és -nyújtások!",
                 tileIconColor: Color(0xffF7B82E),
                 tileIcon: Icons.favorite,
-                tileOnTap: () => true,// Navigator.push(context, new MaterialPageRoute(builder: (context) => Assists())),
+                tileOnTap: () =>  Navigator.push(context, new MaterialPageRoute(builder: (context) => Assists())),
               ),
               Padding(
                 padding: EdgeInsets.all(10),
@@ -90,7 +90,7 @@ class HomeState extends State<Home> {
               ListTileLong(
                 tileIcon: Icons.location_on,
                 tileTitle: "Kikkel találkoztam",
-                tileOnTap: () => true, //  () => Navigator.push(context, new MaterialPageRoute(builder: (context) => ImetYouApp())),
+                tileOnTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => ImetYouApp())),
               ),
               Padding(
                 padding: EdgeInsets.all(10),
@@ -99,14 +99,14 @@ class HomeState extends State<Home> {
                   style: Theme.of(context).textTheme.display1,),
               ),
               ListTileLong(
-                tileOnTap: () => true, //  () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
+                tileOnTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyContacts())),
                 tileTitle: 'Kapcsolataim',
                 tileIcon: Icons.people_outline,
               ),
               ListTileLong(
                 tileIcon: Icons.person,
                 tileTitle: 'Profilom',
-                tileOnTap: () => true, // () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyProfile())),
+                tileOnTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyProfile())),
               )
             ]),
       ),
