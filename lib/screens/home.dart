@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/components/layout_simple.dart';
 import 'package:frontend_flutter/components/listtile_long.dart';
 import 'package:frontend_flutter/components/listtile_short.dart';
 import 'package:frontend_flutter/screens/assist/assists.dart';
@@ -20,24 +21,9 @@ class HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: AppBar(
-        leading:
-        IconButton(
-          icon: Icon(
-            Icons.dehaze,
-            color: Colors.grey,
-          ),
-          onPressed: () {
-            /*...*/
-          },
-        ),
-        title: Text('SEGÍTSNEKEM - ASSIST',
-          style:  Theme.of(context).textTheme.headline,),
-      ),
-      body: Container(
-        margin: EdgeInsets.fromLTRB(20, 8, 20, 8),
-        child: ListView(
+    return  LayoutSimple(
+        layoutTitle: 'SEGÍTSNEKEM - ASSIST',
+        layoutContent: ListView(
             children: [
               Padding(
                 padding: EdgeInsets.all(10),
@@ -109,7 +95,6 @@ class HomeState extends State<Home> {
                 tileOnTap: () => Navigator.push(context, new MaterialPageRoute(builder: (context) => MyProfile())),
               )
             ]),
-      ),
     );
   }
 }

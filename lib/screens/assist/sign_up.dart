@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/components/layout_simple.dart';
 import '../home.dart';
 
 
@@ -12,29 +13,14 @@ class SignUpState extends State<SignUp> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading:
-        IconButton(
-          icon: Icon(
-            Icons.dehaze,
-            color: Colors.grey,
-          ),
-          onPressed: () {
-            /*...*/
-          },
-        ),
-        title: Text('SEGÍTSNEKEM - ASSIST',
-            style:  Theme.of(context).textTheme.headline),
-      ),
-      body: Container(
-        margin: EdgeInsets.all(20),
-        child:
+    return  LayoutSimple(
+      layoutTitle: 'SEGÍTSENEKEM - ASSIST',
+      layoutContent:
         ListView( children: [
           SizedBox(
             height: 60.0,
             child: Image.asset(
-              "logo/standby_logo_full.png",
+              "assets/images/standby_logo_full.png",
               fit: BoxFit.contain,
             ),
           ),
@@ -107,7 +93,6 @@ class SignUpState extends State<SignUp> {
             ),
           ),
         ]),
-      ),
     );
   }
 }

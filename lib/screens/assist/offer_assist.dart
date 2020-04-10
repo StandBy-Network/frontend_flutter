@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/components/layout_simple.dart';
 import '../home.dart';
 
 
@@ -12,24 +13,9 @@ class OfferAssistState extends State<OfferAssist> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading:
-        IconButton(
-          icon: Icon(
-            Icons.dehaze,
-            color: Colors.grey,
-          ),
-          onPressed: () {
-            Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
-          },
-        ),
-        title: Text('Segítség felajánlása',
-            style:  Theme.of(context).textTheme.headline),
-      ),
-      body: Container(
-        margin: EdgeInsets.all(20),
-        child:
+    return LayoutSimple(
+      layoutTitle: 'Segítségfelajánlás',
+      layoutContent:
         ListView( children: [
           Padding(
             padding: EdgeInsets.fromLTRB(10, 40, 10, 40),
@@ -58,7 +44,6 @@ class OfferAssistState extends State<OfferAssist> {
             ),
           ),
         ]),
-      ),
     );
   }
 }

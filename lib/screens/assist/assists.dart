@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/components/layout_simple.dart';
 import 'package:intl/intl.dart';
 
 import '../home.dart';
@@ -15,27 +16,11 @@ class AssistsState extends State<Assists> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading:
-        IconButton(
-          icon: Icon(
-            Icons.dehaze,
-            color: Colors.grey,
-          ),
-          onPressed: () {
-            Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
-          },
-        ),
-        title: Text('Segítségkérések és -nyújtások',
-            style:  Theme.of(context).textTheme.headline),
-      ),
-      body: Container(
-        margin: EdgeInsets.all(20),
-        child: ListView(
+    return  LayoutSimple(
+      layoutTitle: 'Segítségkérések és -nyújtások',
+      layoutContent: ListView(
           children: showRequests(),
         ),
-      ),
     );
   }
 
