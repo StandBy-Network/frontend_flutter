@@ -22,7 +22,7 @@ ThemeData basicTheme() {
       ),
       // form error text
       display2: base.headline.copyWith(
-        fontSize: 12.0,
+        fontSize: 14.0,
         color: Color(0xffD50000),
       ),
       // button text
@@ -43,7 +43,7 @@ ThemeData basicTheme() {
     textTheme: _basicTextTheme(base.textTheme),
     primaryColor: Color(0xffF5F5F5),
     accentColor: Color(0xffD50000),
-    indicatorColor:  Color(0xff979797),
+    indicatorColor: Color(0xff979797),
     iconTheme: IconThemeData(
       color: Color(0xff979797),
       size: 24.0,

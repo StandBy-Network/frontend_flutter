@@ -19,7 +19,7 @@ class MyContactsState extends State<MyContacts> {
         IconButton(
           icon: Icon(
             Icons.dehaze,
-            color: Colors.grey,
+            color: Theme.of(context).indicatorColor,
           ),
           onPressed: () {
             Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
@@ -58,7 +58,7 @@ class MyContactsState extends State<MyContacts> {
     contacts.forEach((contact) {
       list.add(ListTile(
         leading: CircleAvatar(
-          backgroundColor: Color(0xff9B9B9B),
+          backgroundColor: Theme.of(context).indicatorColor,
           child: Text(contact.name.substring(0,1)),
         ),
         title: Text(contact.name),
