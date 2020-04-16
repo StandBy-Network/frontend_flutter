@@ -91,7 +91,7 @@ class RequestAssistState extends State<RequestAssist> {
                     child: RaisedButton(
                         padding: EdgeInsets.all(20.0),
                         onPressed: () {
-                          /*...*/
+                          Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
                         },
                         color: Theme.of(context).indicatorColor,
                         child:
