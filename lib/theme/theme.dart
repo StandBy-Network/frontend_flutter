@@ -44,6 +44,15 @@ ThemeData basicTheme() {
     primaryColor: Color(0xffF5F5F5),
     accentColor: Color(0xffD50000),
     indicatorColor: Color(0xff979797),
+    dialogBackgroundColor: Color(0xff323232),
+    dialogTheme: DialogTheme(
+      contentTextStyle: TextStyle(
+        color: Colors.white,
+      ),
+      titleTextStyle: TextStyle(
+        color: Colors.white,
+      ),
+    ),
     iconTheme: IconThemeData(
       color: Color(0xff979797),
       size: 24.0,
