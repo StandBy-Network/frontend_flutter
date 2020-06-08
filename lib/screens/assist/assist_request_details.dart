@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:frontend_flutter/components/dropdown.dart';
 import 'package:frontend_flutter/components/layout_simple.dart';
+import 'package:frontend_flutter/screens/assist/assists.dart';
 import '../home.dart';
 
 
@@ -13,7 +14,6 @@ class AssistRequestDetails extends StatefulWidget {
 }
 
 class AssistRequestDetailsState extends State<AssistRequestDetails> {
-  bool isSwitched = true;
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +108,35 @@ class AssistRequestDetailsState extends State<AssistRequestDetails> {
                   child: RaisedButton(
                     padding: EdgeInsets.all(20.0),
                     onPressed: () {
-                      Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
+                      showDialog(
+                        context: context,
+                        barrierDismissible: false,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text("Do you decline your help to him/her?"),
+                            content: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                              FlatButton(
+                                child: Row( children: [
+                                  Icon(Icons.cancel, color: Colors.white),
+                                  Text("YES", style: TextStyle(color: Colors.white)),
+                                ],
+                          ),
+                                onPressed: () {
+                                  Navigator.push(context, new MaterialPageRoute(
+                                      builder: (context) => Assists()));
+                                }),
+                              FlatButton(
+                                child: Text("CANCEL", style: TextStyle(color: Colors.white)),
+                                onPressed: () {Navigator.of(context).pop();},
+                              ),
+                            ],
+                            ),
+                            backgroundColor: Color(0xff9B9B9B),
+                          );
+                        },
+                      );
                     },
                     color: Theme.of(context).indicatorColor,
                     child:
