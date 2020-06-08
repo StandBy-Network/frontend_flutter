@@ -17,12 +17,12 @@ class MyProfileState extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
     return LayoutSimple(
-      layoutTitle: 'Profilom',
+      layoutTitle: 'My Profile',
         layoutContent:
         ListView( children: [
           Padding(
             padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-            child: Text('Név',
+            child: Text('Name',
             style: Theme.of(context).textTheme.title),
           ),
           TextField(
@@ -34,7 +34,7 @@ class MyProfileState extends State<MyProfile> {
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-            child: Text('E-mailcím',
+            child: Text('E-mail',
             style: Theme.of(context).textTheme.title),
           ),
           TextField(
@@ -46,7 +46,7 @@ class MyProfileState extends State<MyProfile> {
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-            child: Text('Mobilszám',
+            child: Text('Mobile phone',
             style: Theme.of(context).textTheme.title),
           ),
           TextField(
@@ -62,7 +62,7 @@ class MyProfileState extends State<MyProfile> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 30, 10, 10),
                   child: ButtonTheme(
-                    minWidth: 160.0,
+                    minWidth: 140.0,
                     height: 60.0,
                     child: RaisedButton(
                         padding: EdgeInsets.all(20.0),
@@ -72,7 +72,7 @@ class MyProfileState extends State<MyProfile> {
                         color: Theme.of(context).indicatorColor,
                         child:
                         Text(
-                          "Mégsem",
+                          "Cancel",
                           style:  Theme.of(context).textTheme.caption,
                         )
                     ),
@@ -81,7 +81,7 @@ class MyProfileState extends State<MyProfile> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 30, 10, 10),
                   child: ButtonTheme(
-                    minWidth: 160.0,
+                    minWidth: 140.0,
                     height: 60.0,
                     child: RaisedButton(
                         padding: EdgeInsets.all(20.0),
@@ -91,7 +91,7 @@ class MyProfileState extends State<MyProfile> {
                         color:  Theme.of(context).accentColor,
                         child:
                         Text(
-                          "Mehet!",
+                          "Save",
                           style:  Theme.of(context).textTheme.caption,
                         )
                     ),

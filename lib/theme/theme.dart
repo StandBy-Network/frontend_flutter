@@ -10,7 +10,7 @@ ThemeData basicTheme() {
       ),
       // placeholder, hint text
       title: base.title.copyWith(
-          fontSize: 14.0,
+          fontSize: 18.0,
           fontWeight: FontWeight.w300,
           color:  Color(0xff9B9B9B)
       ),

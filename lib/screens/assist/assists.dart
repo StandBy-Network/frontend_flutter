@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:frontend_flutter/components/layout_simple.dart';
 import 'package:intl/intl.dart';
 
-import '../home.dart';
-
 
 class Assists extends StatefulWidget {
   Assists({Key key}) : super(key: key);

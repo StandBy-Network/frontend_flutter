@@ -16,9 +16,9 @@ class ListTileShort extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: EdgeInsets.fromLTRB(0, 4, 0, 4),
+      padding: EdgeInsets.fromLTRB(4, 4, 4, 4),
       child: Center( child: Container(
-        width: 178.0,
+        width: 188.0,
         height: 90.0,
         child: GestureDetector(
           onTap: tileOnTap,

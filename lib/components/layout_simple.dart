@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_flutter/screens/home.dart';
 
@@ -31,7 +32,7 @@ class LayoutSimple extends StatelessWidget {
                 .headline),
       ),
       body: Container(
-          margin: EdgeInsets.all(20),
+          margin: EdgeInsets.all(8),
           child: layoutContent
       ),
     );
