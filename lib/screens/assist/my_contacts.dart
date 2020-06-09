@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/models/contact.dart';
 
 import '../home.dart';
 
@@ -39,10 +40,10 @@ class MyContactsState extends State<MyContacts> {
 
   List<Contact> buildContacts() {
     List<Contact> contacts = List<Contact>();
-    contacts.add(Contact('Pesti Mama'));
-    contacts.add(Contact('Balatoni Papa'));
-    contacts.add(Contact('Kovács János'));
-    contacts.add(Contact('Király Lulu'));
+    contacts.add(Contact(name: 'Pesti Mama'));
+    contacts.add(Contact(name: 'Balatoni Papa'));
+    contacts.add(Contact(name: 'Kovács János'));
+    contacts.add(Contact(name: 'Király Lulu'));
 
     return contacts;
   }
@@ -66,9 +67,4 @@ class MyContactsState extends State<MyContacts> {
     });
     return list;
   }
-}
-
-class Contact {
-  String name;
-  Contact(this.name);
 }

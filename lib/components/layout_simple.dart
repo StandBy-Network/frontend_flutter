@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_flutter/screens/home.dart';
@@ -5,10 +7,12 @@ import 'package:frontend_flutter/screens/home.dart';
 class LayoutSimple extends StatelessWidget {
   Widget layoutContent;
   String layoutTitle;
+  Widget floatingActionButton;
 
   LayoutSimple({
     @required this.layoutContent,
     @required this.layoutTitle,
+    this.floatingActionButton,
   });
 
   @override
@@ -35,6 +39,7 @@ class LayoutSimple extends StatelessWidget {
           margin: EdgeInsets.all(8),
           child: layoutContent
       ),
+      floatingActionButton: floatingActionButton,
     );
   }
 }

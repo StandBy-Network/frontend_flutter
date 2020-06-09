@@ -17,11 +17,11 @@ class _ToggleSelectState extends State<ToggleSelect> {
       selectedColor: Colors.white,
       fillColor: Theme.of(context).accentColor,
       children: [
-        Text(' 1 óra '),
-        Text(' 4 óra '),
-        Text(' 1 nap '),
-        Text(' 2 nap '),
-        Text(' 1 hét '),
+        Text('   1 hr   '),
+        Text('  4 hrs   '),
+        Text('  1 day   '),
+        Text('  2 days  '),
+        Text('  1 week  '),
       ],
       onPressed: (int index) {
         setState(() {

@@ -19,43 +19,43 @@ class RequestAssistState extends State<RequestAssist> {
   @override
   Widget build(BuildContext context) {
     return  LayoutSimple(
-      layoutTitle: 'Segítségkérés',
+      layoutTitle: 'I ask for help, assist nearby',
       layoutContent:
       ListView( children: [
         Padding(
           padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-          child: Text('Segítségkérés leírása' ,
+          child: Text('What help I need - please select' ,
               style: Theme.of(context).textTheme.display2
           ),
         ),
         DropDown(),
         Padding(
           padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-          child: Text('Mennyi időn belül kell a segítség?' ,
+          child: Text('How fast do I need help?' ,
               style: Theme.of(context).textTheme.display2
           ),
         ),
         ToggleSelect(),
         Padding(
           padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-          child: Text('Megjegyzés',
+          child: Text('Note',
               style: Theme.of(context).textTheme.display2),
         ),
         TextField(
           decoration: InputDecoration(
-            hintText: 'Szöveges megjegyzés',
+            hintText: 'Note about the help you need',
             hintStyle:  Theme.of(context).textTheme.title,
           ),
           style:  Theme.of(context).textTheme.display1,
         ),
         Padding(
           padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-          child: Text('Ki segítsen? Korábbi segítők',
-              style: Theme.of(context).textTheme.display2),
+          child: Text('Who should help you?',
+              style: Theme.of(context).textTheme.display1),
         ),
         TextField(
           decoration: InputDecoration(
-            hintText: 'Választás már segítőként felvett személyek közül',
+            hintText: 'Choose - from anyone you have already added before',
             hintStyle:  Theme.of(context).textTheme.title,
           ),
           style:  Theme.of(context).textTheme.display1,
@@ -75,7 +75,7 @@ class RequestAssistState extends State<RequestAssist> {
             Flexible( child:
             Padding(
               padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-              child: Text('Nyilvános - mindenki segíthet, nem csak az ismerősök',
+              child: Text('Public - anyone can help not only persons I added as contacts',
                   style: Theme.of(context).textTheme.display2),
             ),
             ),
@@ -97,7 +97,7 @@ class RequestAssistState extends State<RequestAssist> {
                       color: Theme.of(context).indicatorColor,
                       child:
                       Text(
-                        "Mégsem",
+                        "Cancel",
                         style:  Theme.of(context).textTheme.caption,
                       )
                   ),
@@ -115,7 +115,7 @@ class RequestAssistState extends State<RequestAssist> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                content: Text("Segítségkérés elküldve"),
+                                content: Text("Assists need recorded!"),
                                 actions: <Widget>[
                                   new FlatButton(
                                     child: new Text('OK'),
@@ -131,7 +131,7 @@ class RequestAssistState extends State<RequestAssist> {
                       color:  Theme.of(context).accentColor,
                       child:
                       Text(
-                        "Mehet!",
+                        "Save!",
                         style:  Theme.of(context).textTheme.caption,
                       )
                   ),
