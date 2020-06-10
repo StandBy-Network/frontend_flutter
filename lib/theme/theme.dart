@@ -10,19 +10,19 @@ ThemeData basicTheme() {
       ),
       // placeholder, hint text
       title: base.title.copyWith(
-          fontSize: 14.0,
+          fontSize: 18.0,
           fontWeight: FontWeight.w300,
           color:  Color(0xff9B9B9B)
       ),
       // input text
       display1: base.headline.copyWith(
-        fontSize:16.0,
+        fontSize:18.0,
         color: Colors.black,
         fontWeight: FontWeight.w300,
       ),
       // form error text
       display2: base.headline.copyWith(
-        fontSize: 12.0,
+        fontSize: 14.0,
         color: Color(0xffD50000),
       ),
       // button text
@@ -33,7 +33,7 @@ ThemeData basicTheme() {
       // main page text
       body1: base.body1.copyWith(
         color: Color(0xffEB6E61),
-        fontSize: 16,
+        fontSize: 18,
       ),
     );
   }
@@ -43,7 +43,16 @@ ThemeData basicTheme() {
     textTheme: _basicTextTheme(base.textTheme),
     primaryColor: Color(0xffF5F5F5),
     accentColor: Color(0xffD50000),
-    indicatorColor:  Color(0xff979797),
+    indicatorColor: Color(0xff979797),
+    dialogBackgroundColor: Color(0xff323232),
+    dialogTheme: DialogTheme(
+      contentTextStyle: TextStyle(
+        color: Colors.white,
+      ),
+      titleTextStyle: TextStyle(
+        color: Colors.white,
+      ),
+    ),
     iconTheme: IconThemeData(
       color: Color(0xff979797),
       size: 24.0,

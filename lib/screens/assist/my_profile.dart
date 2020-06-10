@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_flutter/components/layout_simple.dart';
 import 'profile_saved.dart';
 
 import '../home.dart';
@@ -15,28 +16,13 @@ class MyProfileState extends State<MyProfile> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading:
-        IconButton(
-          icon: Icon(
-            Icons.dehaze,
-            color: Colors.grey,
-          ),
-          onPressed: () {
-            Navigator.push(context, new MaterialPageRoute(builder: (context) => Home()));
-          },
-        ),
-        title: Text('Profilom',
-        style: Theme.of(context).textTheme.headline),
-      ),
-      body: Container(
-        margin: EdgeInsets.all(20),
-        child:
+    return LayoutSimple(
+      layoutTitle: 'My Profile',
+        layoutContent:
         ListView( children: [
           Padding(
             padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-            child: Text('Név',
+            child: Text('Name',
             style: Theme.of(context).textTheme.title),
           ),
           TextField(
@@ -48,7 +34,7 @@ class MyProfileState extends State<MyProfile> {
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-            child: Text('E-mailcím',
+            child: Text('E-mail',
             style: Theme.of(context).textTheme.title),
           ),
           TextField(
@@ -60,7 +46,7 @@ class MyProfileState extends State<MyProfile> {
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-            child: Text('Mobilszám',
+            child: Text('Mobile phone',
             style: Theme.of(context).textTheme.title),
           ),
           TextField(
@@ -76,7 +62,7 @@ class MyProfileState extends State<MyProfile> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 30, 10, 10),
                   child: ButtonTheme(
-                    minWidth: 160.0,
+                    minWidth: 140.0,
                     height: 60.0,
                     child: RaisedButton(
                         padding: EdgeInsets.all(20.0),
@@ -86,7 +72,7 @@ class MyProfileState extends State<MyProfile> {
                         color: Theme.of(context).indicatorColor,
                         child:
                         Text(
-                          "Mégsem",
+                          "Cancel",
                           style:  Theme.of(context).textTheme.caption,
                         )
                     ),
@@ -95,7 +81,7 @@ class MyProfileState extends State<MyProfile> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 30, 10, 10),
                   child: ButtonTheme(
-                    minWidth: 160.0,
+                    minWidth: 140.0,
                     height: 60.0,
                     child: RaisedButton(
                         padding: EdgeInsets.all(20.0),
@@ -105,7 +91,7 @@ class MyProfileState extends State<MyProfile> {
                         color:  Theme.of(context).accentColor,
                         child:
                         Text(
-                          "Mehet!",
+                          "Save",
                           style:  Theme.of(context).textTheme.caption,
                         )
                     ),
@@ -113,8 +99,6 @@ class MyProfileState extends State<MyProfile> {
                 ),
               ]),
         ]),
-      ),
     );
   }
-  void buttonPressed(){}
 }

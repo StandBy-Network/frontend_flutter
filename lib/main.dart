@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:frontend_flutter/screens/assist/assist_chat.dart';
+import 'package:frontend_flutter/screens/assist/assist_request_details.dart';
+import 'package:frontend_flutter/screens/assist/met_persons.dart';
+import 'package:frontend_flutter/screens/assist/my_assists_screen.dart';
+import 'package:frontend_flutter/screens/assist/request_assist.dart';
 import 'package:frontend_flutter/screens/assist/sign_up.dart';
+import 'package:frontend_flutter/screens/home.dart';
 
-import 'utils/app_localizations.dart';
 import 'theme/theme.dart';
+import 'utils/app_localizations.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:  SignUp(),
+      home:  MetPersons(),
       theme: basicTheme(),
       supportedLocales: [
         Locale('en', 'US'),
